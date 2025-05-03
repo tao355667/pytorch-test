@@ -3,7 +3,8 @@
 {
 	"name": "GPU Development,torch2.5+cu124+cudnn9,Py3.11.10",
 	"runArgs": [
-		"--gpus=all"  // 添加 GPU 支持
+		"--gpus=all",  // 添加 GPU 支持
+		"--network=host" // 允许容器访问宿主机网络
 	],
 	"build": {
 		// Sets the run context to one level up instead of the .devcontainer folder.
